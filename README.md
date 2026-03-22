@@ -36,3 +36,25 @@ python -m orchestrator.main --demo
 ```bash
 python -m unittest tests.contracts.test_contracts tests.workflows.test_supervisor
 ```
+
+
+## 브랜치/머지 체크
+메인 브랜치로 머지가 안 될 때는 아래를 먼저 확인하세요.
+
+```bash
+git branch -vv
+```
+
+- `main` 브랜치가 없으면 생성:
+```bash
+git branch main 8c7f821
+```
+- 최신 작업 브랜치(`work`)를 메인으로 fast-forward:
+```bash
+git checkout main
+git merge --ff-only work
+```
+- 다시 작업 브랜치로 복귀:
+```bash
+git checkout work
+```
