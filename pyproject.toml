@@ -1,0 +1,8 @@
+[project]
+name = "autonomous-openclaw"
+version = "0.1.0"
+description = "Agent harness scaffold for autonomous OpenClaw orchestration"
+requires-python = ">=3.11"
+
+[project.scripts]
+autoclaw = "orchestrator.main:main"
