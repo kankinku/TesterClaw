@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+runtime/state.db
+artifacts/drafts/*.md
+artifacts/final/*.md
+memory/tasks/active/*.json
+memory/tasks/completed/*.json
+memory/decisions/*.json
+memory/failures/*.json
+memory/evaluations/*.json
